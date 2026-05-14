@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+
+body{
+padding-top:70px;
+background:#F0E9E9;
+}
+
+/* text */
+h3,p{
+font-weight:bold;
+font-size:15px;
+}
+
+/* layout */
+.package-box{
+display:flex;
+gap:40px;
+margin-bottom:70px;
+}
+
+/* images container */
+.image-box{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+/* default image */
+.image-box img{
+width:160px;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+cursor:pointer;
+
+transition:.3s;
+}
+
+/* hovered image highlight */
+.image-box img.active{
+width:200px;
+height:360px;
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+z-index:2;
+}
+
+/* hovered image highlight */
+.image-box img:hover{
+width:200px;
+height:360px;
+
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+z-index:2;
+}
+
+
+
+@media (max-width:768px){
+
+  /* stack text + images */
+  .package-box{
+    flex-direction:column;
+    gap:20px;
+    margin-bottom:40px;
+  }
+
+  /* center images */
+  .image-box{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+  }
+
+  /* make images flexible */
+  .image-box img{
+    width:100%;
+    max-width:280px;
+    height:auto;
+    border-radius:15px;
+    transform:none;
+    box-shadow:none;
+  }
+
+  /* disable hover & active zoom ONLY on mobile */
+  .image-box img:hover,
+  .image-box img.active{
+    width:100%;
+    height:auto;
+    transform:none;
+    box-shadow:none;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        ☰
+    </button>
+
+    <div id="myNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">  
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="About us.html" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="Exploreplaces.html" class="nav-link">Explore places</a></li>
+            <li class="nav-item"><a href="packages.html" class="nav-link">packages</a></li>
+            <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+
+<!-- ================= KERALA ================= -->
+<div class="package-box">
+
+<div>
+<h3>🌴 KERALA PACKAGE TOUR</h3>
+
+<p>Fare:</p>
+<ul>
+<li>Adult: ₹13,999/-</li>
+<li>Child: ₹10,499/-</li>
+<li>Single Occupancy: ₹16,500/-</li>
+</ul>
+
+<p>Places Covered:</p>
+<ul>
+<li>Munnar – Tea gardens</li>
+<li>Alleppey – Backwaters</li>
+<li>Kochi – City attractions</li>
+<li>Trivandrum – Temple</li>
+</ul>
+
+<p>Package Includes:</p>
+<ul>
+<li>A/C Volvo Coach</li>
+<li>2 Nights Stay</li>
+<li>Meals</li>
+<li>Sightseeing</li>
+<li>Tour Manager</li>
+</ul>
+</div>
+
+<div class="image-box">
+<img src="pk1.jpeg">
+<img src="pk2.jpeg" class="active">
+<img src="pk3.jpeg">
+</div>
+
+</div>
+
+
+<!-- ================= HIMACHAL ================= -->
+<div class="package-box">
+
+<div>
+<h3>🏔️ HIMACHAL PRADESH PACKAGE TOUR</h3>
+
+<p>Fare:</p>
+<ul>
+<li>Adult: ₹11,999/-</li>
+<li>Child: ₹9,599/-</li>
+<li>Single: ₹14,900/-</li>
+</ul>
+
+<p>Places Covered:</p>
+<ul>
+<li>Shimla</li>
+<li>Manali</li>
+<li>Dharamshala</li>
+</ul>
+
+<p>Package Includes:</p>
+<ul>
+<li>A/C Travel</li>
+<li>2 Nights Stay</li>
+<li>Meals</li>
+<li>Sightseeing</li>
+<li>Guide</li>
+</ul>
+</div>
+
+<div class="image-box">
+<img src="shimla.jpeg">
+<img src="manali.jpeg" class="active">
+<img src="dharmashala.jpeg">
+</div>
+
+</div>
+
+
+
+<!-- ================= RAJASTHAN ================= -->
+<div class="package-box">
+
+<div>
+<h3>🏜️ RAJASTHAN PACKAGE TOUR</h3>
+
+<p>Fare:</p>
+<ul>
+<li>Adult: ₹11,999/-</li>
+<li>Child: ₹9,599/-</li>
+<li>Single: ₹14,900/-</li>
+</ul>
+
+<p>Places Covered:</p>
+<ul>
+<li>Jaipur</li>
+<li>Jodhpur</li>
+<li>Udaipur</li>
+</ul>
+
+<p>Package Includes:</p>
+<ul>
+<li>A/C Travel</li>
+<li>2 Nights Stay</li>
+<li>Meals</li>
+<li>Sightseeing</li>
+<li>Guide</li>
+</ul>
+</div>
+
+<div class="image-box">
+<img src="jaipur2.jpeg">
+<img src="jodhpur2.jpeg" class="active">
+<img src="udaipur.jpeg">
+</div>
+
+</div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
